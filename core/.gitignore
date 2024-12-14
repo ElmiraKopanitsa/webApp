@@ -1,5 +1,5 @@
 ### core ###
-core/src/main/resources/application-secrets.properties
+core/src/main/resources/application-secretes.properties
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
