@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Objects;
+import java.util.Set;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,6 +20,9 @@ public class Role {
     private Long id;
     @Column(nullable = false)
     private String role;
+    @Transient
+    @ManyToMany(mappedBy = "roles")
+    private Set<CustomUser> users;
 
     @Override
     public boolean equals(Object o) {
