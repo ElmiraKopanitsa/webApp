@@ -56,5 +56,5 @@ public class Entertainment {
     public int hashCode() {
         return Objects.hash(id, name, date, time, city, address, price, venue, ticketlink);
     }
-    
+
 }
