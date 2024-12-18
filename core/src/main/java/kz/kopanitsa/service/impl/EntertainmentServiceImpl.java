@@ -2,7 +2,6 @@ package kz.kopanitsa.service.impl;
 
 import kz.kopanitsa.dto.EntertainmentDto;
 import kz.kopanitsa.dto.mapper.EntertainmentMapper;
-import kz.kopanitsa.entity.CustomUser;
 import kz.kopanitsa.entity.Entertainment;
 import kz.kopanitsa.repository.EntertainmentRepository;
 import kz.kopanitsa.service.EntertainmentService;
