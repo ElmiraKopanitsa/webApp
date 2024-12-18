@@ -1,21 +1,22 @@
 package kz.kopanitsa.service;
 
 import kz.kopanitsa.dto.EntertainmentDto;
+import kz.kopanitsa.entity.Entertainment;
 
 import java.time.LocalDate;
 import java.util.List;
 
 public interface EntertainmentService {
 
-    EntertainmentDto getByName(String name);
+    List<EntertainmentDto> getByName(String name);
 
-    EntertainmentDto getByDate(LocalDate date);
+    List<EntertainmentDto> getByDate(LocalDate date);
 
-    EntertainmentDto getByCity(String city);
+    List<EntertainmentDto> getByCity(String city);
 
-    EntertainmentDto getByPrice(Integer price);
+    List<EntertainmentDto> getByPrice(Integer price);
 
-    EntertainmentDto getByVenue(String venue);
+    List<EntertainmentDto> getByVenue(String venue);
 
     List<EntertainmentDto> getAllEntertainments();
 

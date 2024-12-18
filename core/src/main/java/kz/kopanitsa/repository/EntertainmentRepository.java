@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 
 public interface EntertainmentRepository extends
@@ -20,4 +21,8 @@ public interface EntertainmentRepository extends
     List<Entertainment> findByPrice(Integer price);
 
     List<Entertainment> findByVenue(String venue);
+
+    boolean existsByDate(LocalDate date);
+
+    boolean existsByTime(LocalTime time);
 }
